@@ -1,0 +1,12 @@
+diff --git a/node_modules/random-access-file/package.json b/node_modules/random-access-file/package.json
+index f99cec9..d023a82 100644
+--- a/node_modules/random-access-file/package.json
++++ b/node_modules/random-access-file/package.json
+@@ -6,7 +6,6 @@
+   "scripts": {
+     "test": "standard && tape test.js"
+   },
+-  "browser": "./browser.js",
+   "dependencies": {
+     "mkdirp-classic": "^0.5.2",
+     "random-access-storage": "^1.1.1"

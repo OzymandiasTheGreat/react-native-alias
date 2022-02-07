@@ -1,0 +1,15 @@
+diff --git a/node_modules/torrent-discovery/package.json b/node_modules/torrent-discovery/package.json
+index fb33f04..d0db5f7 100644
+--- a/node_modules/torrent-discovery/package.json
++++ b/node_modules/torrent-discovery/package.json
+@@ -7,10 +7,6 @@
+     "email": "feross@webtorrent.io",
+     "url": "https://webtorrent.io"
+   },
+-  "browser": {
+-    "bittorrent-dht/client": false,
+-    "bittorrent-lsd": false
+-  },
+   "chromeapp": {},
+   "bugs": {
+     "url": "https://github.com/webtorrent/torrent-discovery/issues"

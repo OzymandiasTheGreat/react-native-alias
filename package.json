@@ -2,7 +2,6 @@
   "name": "react-native-alias",
   "version": "0.0.1",
   "description": "Monorepo for react-native-alias and related projects",
-  "main": "index.js",
   "author": "Tomas Ravinskas",
   "license": "MIT",
   "private": true,

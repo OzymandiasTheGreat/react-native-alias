@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Webpack like alias for React Native. This is just convenience command that edits configs for you. Includes auto shimming for node builtins",
   "bin": "build/cli.js",
+  "main": "build/alias.js",
+  "types": "types/alias.js",
   "author": {
     "name": "Tomas Ravinskas",
     "email": "tomas.rav@gmail.com",
@@ -13,16 +15,13 @@
     "commander": "^9.0.0",
     "find-root": "^1.1.0",
     "is-npm": "5",
-    "object-path": "^0.11.8",
-    "serialize-javascript": "^6.0.0",
-    "typescript": "^4.5.5"
+    "serialize-javascript": "^6.0.0"
   },
   "devDependencies": {
     "@types/find-root": "^1.1.2",
     "@types/fs-extra": "^9.0.13",
     "@types/jest": "^27.4.0",
     "@types/metro-config": "^0.66.0",
-    "@types/object-path": "^0.11.1",
     "@types/serialize-javascript": "^5.0.2",
     "fs-extra": "^10.0.0",
     "jest": "^27.5.0",

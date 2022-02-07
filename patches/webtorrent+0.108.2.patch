@@ -1,0 +1,45 @@
+diff --git a/node_modules/webtorrent/lib/torrent.js b/node_modules/webtorrent/lib/torrent.js
+index 4ee7a80..0a4307a 100644
+--- a/node_modules/webtorrent/lib/torrent.js
++++ b/node_modules/webtorrent/lib/torrent.js
+@@ -433,7 +433,7 @@ class Torrent extends EventEmitter {
+     this._debug('got metadata')
+ 
+     this._xsRequests.forEach(req => {
+-      req.abort()
++      req.abort ? req.abort() : req.destroy()
+     })
+     this._xsRequests = []
+ 
+@@ -655,7 +655,7 @@ class Torrent extends EventEmitter {
+     clearInterval(this._rechokeIntervalId)
+ 
+     this._xsRequests.forEach(req => {
+-      req.abort()
++		req.abort ? req.abort() : req.destroy()
+     })
+ 
+     if (this._rarityMap) {
+diff --git a/node_modules/webtorrent/package.json b/node_modules/webtorrent/package.json
+index cd6c225..f07d6fe 100644
+--- a/node_modules/webtorrent/package.json
++++ b/node_modules/webtorrent/package.json
+@@ -9,17 +9,9 @@
+   },
+   "browser": {
+     "./lib/nat-traversal.js": false,
+-    "./lib/server.js": false,
+-    "./lib/tcp-pool.js": false,
+-    "bittorrent-dht/client": false,
+-    "fs-chunk-store": "memory-chunk-store",
+-    "load-ip-set": false,
+     "nat-pmp": false,
+     "nat-upnp": false,
+-    "net": false,
+-    "network": false,
+-    "os": false,
+-    "ut_pex": false
++    "network": false
+   },
+   "browserify": {
+     "transform": [

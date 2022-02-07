@@ -7,12 +7,6 @@ import { PackageJSONPath } from "./util";
 import { handleAlias, handleUnalias, handleNode } from "./alias";
 
 
-if (!existsSync(MetroConfigPath) || !existsSync(BabelConfigPath) || !existsSync(PackageJSONPath)) {
-	console.error("No React Native project detected.")
-	process.exit(1);
-}
-
-
 program
 	.command("alias", { isDefault: true })
 	.description("Add alias for given module:shim pairs")
@@ -34,4 +28,9 @@ program
 	.action(handleNode);
 
 
-program.parse();
+program.name("react-native-alias").hook("preAction", () => {
+	if (!existsSync(MetroConfigPath) || !existsSync(BabelConfigPath) || !existsSync(PackageJSONPath)) {
+		console.error("No React Native project detected.")
+		process.exit(1);
+	}
+}).parse();
