@@ -1,0 +1,1 @@
+/home/ozymandias/Projects/react-native-alias/alias/README.md
