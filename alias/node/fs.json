@@ -1,0 +1,11 @@
+{
+  "module": "react-native-level-fs",
+  "depends": [
+    "asyncstorage-down"
+  ],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

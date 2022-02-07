@@ -1,0 +1,9 @@
+{
+  "module": "browserify-zlib",
+  "depends": [],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

@@ -1,0 +1,11 @@
+{
+  "module": "readable-stream",
+  "depends": [
+    "stream-browserify"
+  ],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

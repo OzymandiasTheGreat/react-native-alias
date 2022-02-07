@@ -1,0 +1,9 @@
+{
+  "module": "util",
+  "depends": [],
+  "alias": {
+    "metro": false,
+    "babel": false
+  },
+  "shim": false
+}

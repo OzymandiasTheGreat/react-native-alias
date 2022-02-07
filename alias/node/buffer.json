@@ -1,0 +1,12 @@
+{
+  "module": "buffer",
+  "depends": [],
+  "alias": {
+    "metro": false,
+    "babel": false
+  },
+  "shim": {
+    "head": "import { Buffer } from \"buffer\";",
+    "body": "global.Buffer = Buffer;"
+  }
+}

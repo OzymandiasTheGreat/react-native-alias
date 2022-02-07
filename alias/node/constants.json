@@ -1,0 +1,9 @@
+{
+  "module": "constants-browserify",
+  "depends": [],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

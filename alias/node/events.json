@@ -1,0 +1,9 @@
+{
+  "module": "events",
+  "depends": [],
+  "alias": {
+    "metro": false,
+    "babel": false
+  },
+  "shim": false
+}

@@ -1,0 +1,14 @@
+{
+  "module": "react-native-crypto",
+  "depends": [
+    "react-native-randombytes"
+  ],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": {
+    "head": false,
+    "body": "require(\"crypto\");"
+  }
+}

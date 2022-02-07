@@ -1,0 +1,14 @@
+{
+  "module": "process",
+  "depends": [
+    "browser-process-hrtime"
+  ],
+  "alias": {
+    "metro": false,
+    "babel": false
+  },
+  "shim": {
+    "head": "import process from \"process\"",
+    "body": "global.process = process;\nglobal.process.hrtime = require(\"browser-process-hrtime\");\nglobal.process.env.NODE_ENV = __DEV__ ? \"development\" : \"production\";"
+  }
+}

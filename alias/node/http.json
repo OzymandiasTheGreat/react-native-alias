@@ -1,0 +1,9 @@
+{
+  "module": "@tradle/react-native-http",
+  "depends": [],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

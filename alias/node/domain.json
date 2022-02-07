@@ -1,0 +1,9 @@
+{
+  "module": "domain-browser",
+  "depends": [],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

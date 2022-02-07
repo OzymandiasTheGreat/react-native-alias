@@ -1,0 +1,9 @@
+{
+  "module": "react-native-udp",
+  "depends": [],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

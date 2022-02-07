@@ -1,0 +1,9 @@
+{
+  "module": "punycode",
+  "depends": [],
+  "alias": {
+    "metro": false,
+    "babel": false
+  },
+  "shim": false
+}

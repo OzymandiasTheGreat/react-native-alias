@@ -1,0 +1,9 @@
+{
+  "module": "fetch-dns",
+  "depends": [],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

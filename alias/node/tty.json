@@ -1,0 +1,9 @@
+{
+  "module": "tty-browserify",
+  "depends": [],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}

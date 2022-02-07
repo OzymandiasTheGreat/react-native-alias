@@ -1,0 +1,9 @@
+{
+  "module": "react-native-tcp",
+  "depends": [],
+  "alias": {
+    "metro": true,
+    "babel": false
+  },
+  "shim": false
+}
