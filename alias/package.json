@@ -2,15 +2,40 @@
   "name": "react-native-alias",
   "version": "0.0.1",
   "description": "Webpack like alias for React Native. This is just convenience command that edits configs for you. Includes auto shimming for node builtins",
-  "bin": "build/cli.js",
-  "main": "build/alias.js",
-  "types": "types/alias.js",
   "author": {
     "name": "Tomas Ravinskas",
     "email": "tomas.rav@gmail.com",
     "url": "https://tomasrav.me"
   },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://donorbox.org/tomasrav-open-source-development"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/ozymandias"
+    }
+  ],
   "license": "MIT",
+  "homepage": "https://github.com/OzymandiasTheGreat/react-native-alias",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OzymandiasTheGreat/react-native-alias.git"
+  },
+  "bugs": "https://github.com/OzymandiasTheGreat/react-native-alias/issues",
+  "keywords": [
+    "alias",
+    "react-native",
+    "metro",
+    "babel",
+    "module-resolver",
+    "extraNodeModules",
+    "nodeify"
+  ],
+  "bin": "build/cli.js",
+  "main": "build/alias.js",
+  "types": "types/alias.js",
   "dependencies": {
     "commander": "^9.0.0",
     "find-root": "^1.1.0",
